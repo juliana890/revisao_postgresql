@@ -15,7 +15,6 @@ public class DB {
 	
 	private static Connection conn = null;
 	
-	
 	public static Connection getConnection() {
 		if(conn == null) {
 			try {
@@ -26,7 +25,6 @@ public class DB {
 			catch(SQLException e) {
 				throw new DBException(e.getMessage());
 			}
-			
 		}
 		
 		return conn;
@@ -73,8 +71,7 @@ public class DB {
 			catch(SQLException e) {
 				throw new DBException(e.getMessage());
 			}
-		}
-		
+		}	
 	}
 }
 
